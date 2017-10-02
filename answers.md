@@ -89,3 +89,14 @@ for (i = 0; i < 10; i++ ){
 
 
 <!-- Let’s add a message about when the page was last updated. We'll do this by appending a new <li> element to the <ul> in the sidebar (you might need to refresh the page to bring back the list items that we emptied out earlier). -->
+
+listItem.classList = 'bio-info-item'
+bioInfo = document.querySelector('.bio-info')
+bioInfo.appendChild(listItem)
+
+<!-- For bonus marks, apply the correct classes to these new elements of yours so the styling is consistent with the rest of the list items. -->
+
+var leftSpan2 = document.createElement('span');
+var leftSpan2.innerHTML = Date()
+leftSpan2.appendChild(lastUpdated2);
+listItem.appendChild(leftSpan2);
